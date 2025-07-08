@@ -1,0 +1,218 @@
+ * { /* Aplica a todos os elementos */
+      margin: 0; /* Remove margem externa */
+      padding: 0; /* Remove preenchimento interno */
+      box-sizing: border-box; /* Inclui padding e borda dentro do tamanho total */
+      scroll-padding-top: 100px;/*Espaçamento*/
+      scroll-behavior: smooth;/*Suaviza o scroll da página*/
+    }
+    body { /* Estilo do corpo da página */
+      font-family: 'Montserrat', sans-serif; /* Fonte principal */
+      background-color: #0d0d0d; /* Fundo preto escuro */
+      color: #fff; /* Texto branco */
+    }
+    header { /* Cabeçalho */
+      display: flex; /* Layout flexível */
+      justify-content: space-between; /* Espaço entre logo e menu */
+      align-items: center; /* Alinhamento vertical ao centro */
+      padding: 20px 60px; /* Espaçamento interno */
+      background-color: #000; /* Fundo preto */
+    }
+    header nav a { /* Links do menu no cabeçalho */
+      color: white; /* Cor branca */
+      text-decoration: none; /* Remove sublinhado */
+      margin-left: 30px; /* Espaçamento à esquerda entre links */
+      font-weight: 500; /* Peso da fonte médio */
+      font-size: 14px; /* Tamanho da fonte */
+    }
+    .hero { /* Seção principal de destaque */
+      position: relative;
+      text-align: center;
+      padding: 120px 20px;
+      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('teste.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 90vh; /* Altura quase cheia da tela */
+    }
+    .hero h1 { /* Título principal */
+      font-size: 64px; /* Tamanho da fonte grande */
+      font-weight: 900; /* Fonte em negrito forte */
+      color: #fa7f06; /* Cor laranja */
+      margin-top: 20px; /* Espaçamento superior */
+    }
+    .hero p { /* Parágrafo abaixo do título */
+      font-size: 22px; /* Tamanho da fonte */
+      margin: 20px 0 40px; /* Espaçamento superior e inferior */
+    }
+    .btn { /* Botões gerais */
+      background-color: #fa7f06; /* Fundo laranja */
+      color: white; /* Texto branco */
+      padding: 14px 36px; /* Espaçamento interno */
+      border: none; /* Sem borda */
+      border-radius: 5px; /* Bordas arredondadas */
+      font-size: 18px; /* Tamanho da fonte */
+      cursor: pointer; /* Cursor de mão ao passar o mouse */
+      font-weight: bold; /* Texto em negrito */
+    }
+    .section { /* Seções de conteúdo */
+      display: flex; /* Layout flexível */
+      justify-content: space-between; /* Espaçamento entre elementos */
+      align-items: center; /* Alinhamento vertical ao centro */
+      padding: 60px 60px; /* Espaçamento interno */
+      flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    }
+    .section.reverse { /* Seção invertida (imagem à esquerda) */
+      flex-direction: row-reverse; /* Inverte a direção dos elementos */
+    }
+    .text-box { /* Caixa de texto */
+      flex: 1; /* Ocupa o mesmo espaço disponível */
+      min-width: 280px; /* Largura mínima */
+      margin: 20px; /* Espaçamento externo */
+    }
+    .text-box h2 { /* Títulos dentro das caixas de texto */
+      color: #fa7f06; /* Cor laranja */
+      font-size: 22px; /* Tamanho da fonte */
+      margin-bottom: 10px; /* Espaçamento inferior */
+    }
+    .text-box p { /* Parágrafos nas caixas de texto */
+      margin: 15px 0; /* Espaçamento vertical */
+      line-height: 1.6; /* Altura da linha */
+      font-size: 14px; /* Tamanho da fonte */
+      color: #ccc; /* Cinza claro */
+      text-align: justify;
+    }
+    .images { /* Contêiner de imagens */
+      flex: 1; /* Ocupa o mesmo espaço disponível */
+      display: flex; /* Layout flexível */
+      flex-wrap: wrap; /* Permite quebra de linha */
+      gap: 10px; /* Espaçamento entre imagens */
+      margin: 20px; /* Espaçamento externo */
+      justify-content: center; /* Centraliza o conteúdo */
+    }
+    .images01 { /* Contêiner de imagens */
+      flex: 1; /* Ocupa o mesmo espaço disponível */
+      display: flex; /* Layout flexível */
+      flex-wrap: wrap; /* Permite quebra de linha */
+      gap: 10px; /* Espaçamento entre imagens */
+      margin: 20px; /* Espaçamento externo */
+      justify-content: center; /* Centraliza o conteúdo */
+    }
+    .images img { /* Imagens das seções */
+      width: 500px; /* Largura fixa */
+      height: auto; /* Altura automática */
+      object-fit: cover; /* Preenche a área sem distorcer */
+      border-radius: 5px; /* Bordas arredondadas */
+    }
+    .section-title span { /* Destaque dentro dos títulos */
+      color: white; /* Cor branca */
+    }
+    #formulario {
+      text-align: center;
+      padding: 2rem;
+      color: inherit;         /* Usa a cor do texto ao redor, ou você pode colocar uma cor específica */
+      text-decoration: none;  /* Remove o sublinhado */
+      cursor: pointer;        /* Opcional: deixa o cursor como mãozinha para indicar que é clicável */
+    }
+    footer { /* Rodapé */
+      background: #000; /* Fundo preto */
+      color: white; /* Texto branco */
+      text-align: center; /* Texto centralizado */
+      padding: 40px 20px 20px; /* Espaçamento interno */
+      font-size: 14px; /* Tamanho da fonte */
+    }
+    footer nav { /* Navegação do rodapé */
+      margin-top: 20px; /* Espaçamento superior */
+    }
+    footer nav a { /* Links do rodapé */
+      color: white; /* Cor branca */
+      margin: 0 15px; /* Espaçamento horizontal */
+      text-decoration: none; /* Remove sublinhado */
+    }
+    .images01 img {
+      width: 180px; /* Largura automática, mantém proporção */
+      margin: auto; /* Espaço entre as imagens */
+      border-radius: 5px; /* Bordas arredondadas, opcional */
+  }
+  
+   /* RESPONSIVIDADE: Tablets (até 900px) */
+@media (max-width: 900px) { /* Estilos aplicados em telas com até 900px */
+
+  header {
+    flex-direction: column; /* Header em coluna */
+    align-items: flex-start; /* Alinha itens à esquerda */
+    padding: 20px 30px; /* Padding ajustado */
+  }
+
+  header nav {
+    margin-top: 10px; /* Espaço acima da navegação */
+    flex-wrap: wrap; /* Permite quebra de linha nos itens */
+  }
+
+  .section {
+    flex-direction: column; /* Seção em coluna */
+    padding: 40px 30px; /* Padding ajustado */
+  }
+
+  .hero h1 {
+    font-size: 48px; /* Reduz tamanho do título */
+  }
+
+  .hero p {
+    font-size: 18px; /* Reduz tamanho do parágrafo */
+  }
+
+  .images01 img {
+      width: 180px; /* Largura automática, mantém proporção */
+      margin: auto; /* Espaço entre as imagens */
+      border-radius: 5px; /* Bordas arredondadas, opcional */
+  }
+}
+
+/* RESPONSIVIDADE: Celulares (até 600px) */
+@media (max-width: 600px) { /* Estilos aplicados em telas com até 600px */
+
+  .hero {
+    height: auto; /* Altura ajustável */
+    padding: 80px 20px; /* Padding adaptado para celular */
+  }
+
+  .hero h1 {
+    font-size: 36px; /* Título menor */
+  }
+
+  .hero p {
+    font-size: 16px; /* Texto menor */
+  }
+
+  .btn {
+    width: 100%; /* Botão ocupa toda a largura */
+    font-size: 16px; /* Fonte reduzida */
+    padding: 12px 24px; /* Padding ajustado */
+  }
+
+  .section {
+    padding: 30px 20px; /* Menos espaçamento interno */
+  }
+
+  .text-box {
+    margin: 10px 0; /* Margem vertical pequena */
+  }
+
+  .text-box h2 {
+    font-size: 20px; /* Subtítulo menor */
+  }
+
+  .text-box p {
+    font-size: 13px; /* Texto menor */
+  }
+
+  .images01 img {
+      width: 180px; /* Largura automática, mantém proporção */
+      margin: auto; /* Espaço entre as imagens */
+      border-radius: 5px; /* Bordas arredondadas, opcional */
+  }
+}
